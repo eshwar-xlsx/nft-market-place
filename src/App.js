@@ -1,25 +1,52 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route, Outlet } from "react-router-dom";
+import Navbar from "./Navbar";
+import "./App.css";
+import Home from "./Home";
+import Categories from "./Categories";
+import Explore from "./Explore";
+import Blogs from "./Blogs";
+// import Footer from "./Footer";
+import Footer2 from "./Footer2";
 
-function App() {
+import 'aos/dist/aos.css';
+
+// import Navbar from "./Navbar";
+import Navbar2 from "./Navbar2";
+import About_Us from "./About_Us";
+import ContactUs from "./ContactUs";
+import WildCard from "./WildCard";
+
+
+const AppLayout = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+   
+      <Footer2 />
+    </>
   );
-}
+};
+
+const App = () => {
+  return (
+    <React.StrictMode>
+      <Router>
+      <Routes>
+        <Route path="" element={<AppLayout />}>
+          <Route index element={<Home />} />
+          <Route path="categories" element={<Categories />} />
+          <Route path="explore" element={<Explore />} />
+          <Route path="blogs" element={<Blogs />} />
+          <Route path='about' element={<About_Us/>} />
+          <Route path='' element={<ContactUs/>} />
+        </Route>
+        <Route path="*" element={<WildCard/>} />
+
+      </Routes>
+    </Router>
+    </React.StrictMode>
+  );
+};
 
 export default App;

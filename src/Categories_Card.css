@@ -1,0 +1,93 @@
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  width: 100%;
+  max-width: 200px; /* Increased card size */
+  margin-right: 15px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  width: 100px;
+  height: 300px; /* Increased image height */
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.card-img-top:hover {
+  transform: scale(1.05);
+}
+
+.card-body {
+  padding: 60px;
+}
+
+.card-title {
+  font-size: 1.6rem; /* Slightly larger title font size */
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 1.2rem; /* Slightly larger text font size */
+  color: #555;
+}
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+.scrollable-row {
+  display: flex;
+  overflow-x: auto;
+  gap: 50px; /* Maintain the space between cards */
+  white-space: nowrap;
+  padding-left: 10;
+  padding-right: 20;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  position: relative; /* Position for custom scrollbar placement */
+}
+
+/* Small, custom scrollbar styling */
+.scrollable-row::-webkit-scrollbar {
+  height: 8px; /* Adjusted scrollbar height */
+  width: 8px; /* Adjusted scrollbar width */
+}
+
+.scrollable-row::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.scrollable-row::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.scrollable-row::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Add gap between the card and the scrollbar */
+.scrollable-row-container {
+  margin-right: 30px; /* 30px gap from the card */
+  width: 25%; /* Restrict the scrollbar to 25% of the screen width */
+  position: fixed; /* Fix the scrollbar to the right side */
+  right: 0; /* Align to the right of the screen */
+  top: 0; /* Align to the top for visibility */
+  bottom: 0; /* Stretch to the bottom */
+  overflow-y: auto; /* Allow vertical scrolling */
+}

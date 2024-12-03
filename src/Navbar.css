@@ -1,0 +1,85 @@
+.bottom-border {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px; /* Optional, adds space between text and border */
+  }
+  
+  .bottom-border::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%; /* Start with no border */
+    height: 2px; /* Thickness of the border */
+    background-color: red; /* Border color */
+    transition: width 0.5s ease; /* Add a smooth transition for the width */
+  }
+  
+  .bottom-border:hover::after {
+    width: 100%; /* When hovered, the border expands to 100% */
+  }
+  
+  /* Navbar container styling */
+.navbar {
+    padding: 5px 0; /* Reduced padding in navbar */
+    font-size: 16px; /* Reduced font size */
+  }
+  
+  .navbar .container-fluid {
+    padding: 0 15px; /* Add some padding for the content but keep it minimal */
+  }
+  
+  /* Branding image styling */
+  .navbar .navbar-brand img {
+    height: 80px; /* Reduced the logo height */
+    width: auto; /* Automatically scale width while maintaining aspect ratio */
+  }
+  
+  /* Navbar items and links styling */
+  .navbar-nav .nav-item .nav-link {
+    padding: 8px 15px; /* Reduced padding in nav items */
+    font-size: 16px; /* Reduced font size */
+  }
+  
+  /* Hover effect for bottom border */
+  .bottom-border {
+    position: relative;
+  }
+  
+  .bottom-border::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: red;
+    transition: width 0.3s ease; /* Slow transition for the bottom border */
+  }
+  
+  .bottom-border:hover::after {
+    width: 100%;
+  }
+  
+  /* Right section styling */
+  .navbar .d-flex {
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+  }
+  
+  .navbar .d-flex img {
+    height: 60px; /* Reduced avatar size */
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .navbar .d-flex h6 {
+    margin-bottom: 0;
+    font-size: 14px; /* Reduced font size */
+  }
+  
+  .navbar .d-flex .text-white {
+    color: #fff;
+  }
+  
