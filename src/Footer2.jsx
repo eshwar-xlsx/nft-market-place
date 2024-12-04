@@ -5,7 +5,7 @@ const Footer2 = () => {
     <>
       <div className="container-fluid bg-dark">
         <div className="row" style={{ fontSize: "50px" }}>
-          <div className="col-md-12">
+          <div className="col-md-12 col-sm-6">
             <section className="mb-4 text-center d-flex justify-content-center gap-5">
               <a
                 className="btn btn-outline-light btn-floating m-1"

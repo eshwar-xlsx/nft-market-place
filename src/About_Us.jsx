@@ -58,8 +58,8 @@ const About_Us = () => {
 
           {/* Reviews Section */}
           <div  className="row mt-5">
-            <div className="col-md-12">
-              <h2 className="text-center text-primary">Client Reviews</h2>
+            <div className="col-md-12 mt-5">
+              <h2 className="text-center text-warning mt-5">Client Reviews</h2>
             </div>
             <div className="col-md-10 mx-auto mt-4">
               <div className="row">

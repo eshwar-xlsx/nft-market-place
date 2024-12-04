@@ -83,18 +83,24 @@ const Home = () => {
               rare collectibles. Join the bidding, claim your favorite NFTs, and
               become part of the digital revolution!
             </p>
-            <div className="text-center   " style={{ marginTop: "50px" }}>
-              <Link to="/explore">
-                <button className="button-30 ms-5">Explore More</button>
-              </Link>
-
-              <Link to="/categories">
-                <button className="button-30 ms-5">Collect NFT</button>
-              </Link>
+            <div className="text-center mt-4">
+              <div className="d-flex flex-column flex-sm-row justify-content-center align-items-center">
+                <Link to="/explore">
+                  <button className="button-30 mx-2 my-2 my-sm-0">
+                    Explore More
+                  </button>
+                </Link>
+                <Link to="/categories">
+                  <button className="button-30 mx-2 my-2 my-sm-0">
+                    Collect NFT
+                  </button>
+                </Link>
+              </div>
             </div>
+            
           </div>
 
-          <div className="shadow-lg col-md-5 d-flex align-items-center justify-content-center">
+          <div className="video-container shadow-lg col-md-5 col-12 d-flex align-items-center justify-content-center">
             <video muted autoPlay loop className="home-video">
               <source src="assets/Recording-2.mp4" type="video/mp4" />
             </video>
@@ -154,7 +160,7 @@ const Home = () => {
                   Explore more about{" "}
                   <span style={{ color: "blueviolet" }}>Creator </span> !
                 </h4>
-                <div className="row" data-aos="zoom-in-right" >
+                <div className="row" data-aos="zoom-in-right">
                   <Creative_Collectors artists={sellers} />
                 </div>
               </div>

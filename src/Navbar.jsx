@@ -17,6 +17,7 @@ const Navbar = () => {
         }}
       >
         <div className="container-fluid">
+          {/* Branding */}
           <NavLink className="navbar-brand text-white fw-bold" to="/">
             <img
               src="./assets/logo.png"

@@ -63,3 +63,30 @@
   box-shadow: #D6D6E7 0 3px 7px inset;
   transform: translateY(2px);
 }
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 15px; 
+}
+
+.video-container .home-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px; 
+}
+
+@media (max-width: 768px) {
+  .video-container {
+    margin: 20px auto;
+    max-width: 100%; 
+    height: auto; 
+  }
+
+  .video-container .home-video {
+    border-radius: 10px; 
+  }
+}
