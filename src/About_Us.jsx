@@ -7,7 +7,7 @@ const About_Us = () => {
       <div className="container-fluid bg-dark">
         <div className="row">
           <div className="col-md-12">
-            <h1 className="text-white text-center display-4">About Us</h1>
+            <h2 className=" text-center " style={{color:"#BB73B3"}}>About Us</h2>
             <p className="text-white-50 text-center">
               Discover the future of digital ownership
             </p>

@@ -25,7 +25,7 @@ const Home = () => {
     const interval = setInterval(() => {
       index = (index + 1) % texts.length;
       setText(texts[index]);
-    }, 2000);
+    }, 1200);
 
     return () => clearInterval(interval);
   }, []);
