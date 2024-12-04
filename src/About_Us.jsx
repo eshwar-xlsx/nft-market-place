@@ -1,5 +1,7 @@
 import React from "react";
 
+import './About_Us.css'
+
 const About_Us = () => {
   return (
     <>
@@ -11,7 +13,7 @@ const About_Us = () => {
               Discover the future of digital ownership
             </p>
           </div>
-          <div className="row" style={{ marginTop: "50px" }}>
+          <div className="row mt-5">
             {/* Text Section */}
             <div className="col-md-8">
               <h2
@@ -38,20 +40,73 @@ const About_Us = () => {
 
             {/* Video Section */}
             <div className="col-md-4">
-            <div
-              style={{ height: "300px", width: "100%", borderRadius:"50px" }}
-              className="shadow-lg col-md-4 d-flex align-items-center justify-content-center"
-            >
-              <video
-                muted
-                autoPlay
-                loop
-                className="home-video"
-                style={{ width: "100%", height: "100%", objectFit: "cover" }}
+              <div
+                style={{ height: "300px", width: "100%", borderRadius: "15px" }}
+                className="shadow-lg col-md-4 d-flex align-items-center justify-content-center"
               >
-                <source src="assets/about-video.mp4" type="video/mp4" />
-              </video>
+                <video
+                  muted
+                  autoPlay
+                  loop
+                  className="home-video"
+                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                >
+                  <source src="assets/about-video.mp4" type="video/mp4" />
+                </video>
+              </div>
             </div>
+          </div>
+
+          {/* Reviews Section */}
+          <div  className="row mt-5">
+            <div className="col-md-12">
+              <h2 className="text-center text-primary">Client Reviews</h2>
+            </div>
+            <div className="col-md-10 mx-auto mt-4">
+              <div className="row">
+                {[
+                  { name: "Liam Mendes", username: "@liammendes", stars: 4, img: "https://cdn3.iconfinder.com/data/icons/avatars-15/64/_Ninja-2-512.png" },
+                  { name: "Noah Wood", username: "@noahwood", stars: 5, img: "./assets/icon-1.png" },
+                  { name: "Oliver Queen", username: "@oliverqueen", stars: 4, img: "./assets/icon-2.png" },
+                  { name: "Barry Allen", username: "@barryallen", stars: 4, img: "https://cdn3.iconfinder.com/data/icons/avatars-15/64/_Ninja-2-512.png" },
+                ].map((client, index) => (
+                  <div className="col-md-6 mb-4" key={index}>
+                    <div className="card bg-light shadow-sm">
+                      <div className="card-body">
+                        <div className="d-flex align-items-center mb-3">
+                          <img
+                            src={client.img}
+                            alt={client.name}
+                            style={{
+                              width: "50px",
+                              height: "50px",
+                              borderRadius: "40px",
+                              marginRight: "15px",
+                            }}
+                          />
+                          <div>
+                            <h5 className="mb-0">{client.name}</h5>
+                            <small className="text-muted">{client.username}</small>
+                          </div>
+                        </div>
+                        <div className="mb-3">
+                          {[...Array(5)].map((_, i) => (
+                            <i
+                              key={i}
+                              className={`fa-star ${
+                                i < client.stars ? "fas text-warning" : "far text-secondary"
+                              }`}
+                            />
+                          ))}
+                        </div>
+                        <p className="text-secondary">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>

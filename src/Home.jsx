@@ -154,8 +154,7 @@ const Home = () => {
                   Explore more about{" "}
                   <span style={{ color: "blueviolet" }}>Creator </span> !
                 </h4>
-                <div className="row" data-aos="zoom-in-right" data-aos-easing="ease-out-cubic"
-                  data-aos-duration="2000">
+                <div className="row" data-aos="zoom-in-right" >
                   <Creative_Collectors artists={sellers} />
                 </div>
               </div>

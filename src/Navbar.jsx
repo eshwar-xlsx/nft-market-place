@@ -12,12 +12,11 @@ const Navbar = () => {
           position: "sticky",
           top: "0",
           zIndex: "100",
-          border:"1px solid red"
+          
           
         }}
       >
         <div className="container-fluid">
-          {/* Branding */}
           <NavLink className="navbar-brand text-white fw-bold" to="/">
             <img
               src="./assets/logo.png"

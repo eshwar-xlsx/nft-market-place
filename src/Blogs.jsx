@@ -73,7 +73,7 @@ const Blogs = () => {
     <div className="container-fluid  bg-dark">
       <div className="row bg-dark">
         <div className="col-md-12 bg-dark" >
-          <h2 className="text-center text-white mb-4">Latest Blogs</h2>
+          <h2 className="text-center text-white mb-4" style={{color:"#BB73B3"}}>Latest Blogs</h2>
           <p className="text-center text-white-50 mb-5">
             Stay updated with the latest trends, news, and insights from the world of NFTs, Crypto, and Digital Assets.
           </p>

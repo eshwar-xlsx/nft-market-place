@@ -5,7 +5,7 @@ import Explore_Card from "./Explore_Card";
 const data = [
   {
     img_url: "assets/movies_data_black_cat.gif",
-    text: "Lorem ipsum dolor sit amet",
+    text: "The Shocking Black-Cat",
     price: "24",
   },
   {
@@ -32,7 +32,7 @@ const Explore = () => {
         <div className="row">
           <div className="col-md-12  text-center">
             <h1
-              style={{ fontSize: "25px", marginTop: "30px", color: "white" }}
+              style={{ fontSize: "25px", marginTop: "30px", color: "#BB73B3" }}
             >
               Here Starts The Bidding
             </h1>
