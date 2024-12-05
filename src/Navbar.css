@@ -1,80 +1,81 @@
-.bottom-border {
-    position: relative;
-    display: inline-block;
-    padding-bottom: 5px;
-  }
-  
-  .bottom-border::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0%;
-    height: 2px; 
-    background-color: red; 
-  }
-  
-  .bottom-border:hover::after {
-    width: 100%; 
-  }
-  
 .navbar {
-    padding: 5px 0; 
-    font-size: 16px; 
+  font-size: 20px; 
+  padding: 10px 20px; 
+}
+
+.navbar-brand .brand-logo {
+  height: 50px; 
+  width: auto;
+  object-fit: contain;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.custom-toggler {
+  border-color: white; 
+}
+
+
+.navbar-nav .nav-item .nav-link {
+  padding: 5px 10px; 
+  font-size: 19px; 
+}
+
+.bottom-border {
+  position: relative;
+  display: inline-block;
+}
+
+.bottom-border::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: red;
+  transition: width 0.3s ease;
+}
+
+.bottom-border:hover::after {
+  width: 100%;
+}
+
+.user-section {
+  display: flex;
+  gap: 15px;
+}
+
+.user-avatar {
+  height: 50px; 
+  width: 50px;
+  border-radius: 50%;
+}
+
+.user-name {
+  font-size: 18px; 
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
   }
-  
-  .navbar .container-fluid {
-    padding: 0 15px; 
+
+  .navbar-nav .nav-item {
+    margin: 5px 0;
   }
-  
-  .navbar .navbar-brand img {
-    height: 100px; 
-    width: auto; 
+
+  .user-avatar {
+    height: 90px; 
+    width: 90px;
   }
-  
-  .navbar-nav .nav-item .nav-link {
-    padding: 8px 15px;
+
+  .user-name {
     font-size: 20px; 
+    font-weight: bold;
   }
-  
-  .bottom-border {
-    position: relative;
-  }
-  
-  .bottom-border::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0%;
-    height: 2px;
-    background-color: red;
-    transition: width 0.3s ease; 
-  }
-  
-  .bottom-border:hover::after {
-    width: 100%;
-  }
-  
-  /* Right section styling */
-  .navbar .d-flex {
-    padding: 0; /* Remove padding */
-    margin: 0; /* Remove margin */
-  }
-  
-  .navbar .d-flex img {
-    height: 60px; /* Reduced avatar size */
-    width: 60px;
-    border-radius: 50%;
-    margin-right: 10px;
-  }
-  
-  .navbar .d-flex h6 {
-    margin-bottom: 0;
-    font-size: 14px; /* Reduced font size */
-  }
-  
-  .navbar .d-flex .text-white {
-    color: #fff;
-  }
-  
+}

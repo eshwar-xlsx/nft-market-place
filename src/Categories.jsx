@@ -9,17 +9,17 @@ const game_data = [
     game_price: "23",
   },
   {
-    game_image: "/assets/game_data_snoop_dog.avif",
+    game_image: "/assets/game_data_1.avif",
     game_title: "Snoop Dog",
     game_price: "23",
   },
   {
-    game_image: "/assets/game_data_snoop_dog.avif",
+    game_image: "/assets/game_data_2.webp",
     game_title: "Snoop Dog",
     game_price: "23",
   },
   {
-    game_image: "/assets/game_data_snoop_dog.avif",
+    game_image: "/assets/game_data_4.avif",
     game_title: "Snoop Dog",
     game_price: "23",
   },
@@ -32,7 +32,17 @@ const sports_data = [
     sports_title: "The Collab",
     sports_price: "35",
   },
-  // Other sports data...
+  {
+    sports_image: "/assets/sports_data_1.avif",
+    sports_title: "The Collab",
+    sports_price: "35",
+  },
+  {
+    sports_image: "/assets/sports_data_2.webp",
+    sports_title: "The Collab",
+    sports_price: "35",
+  },
+  
 ];
 
 const movies_data = [

@@ -6,7 +6,7 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
   width: 100%;
-  max-width: 200px; /* Increased card size */
+  max-width: 200px; 
   margin-right: 15px;
 }
 
@@ -17,7 +17,7 @@
 
 .card-img-top {
   width: 100px;
-  height: 300px; /* Increased image height */
+  height: 300px; 
   object-fit: cover;
   transition: transform 0.4s ease;
 }
@@ -31,12 +31,11 @@
 }
 
 .card-title {
-  font-size: 1.6rem; /* Slightly larger title font size */
-  font-weight: bold;
+  font-size: 1.6rem;
 }
 
 .card-text {
-  font-size: 1.2rem; /* Slightly larger text font size */
+  font-size: 1.2rem; 
   color: #555;
 }
 
@@ -52,19 +51,19 @@ h1 {
 .scrollable-row {
   display: flex;
   overflow-x: auto;
-  gap: 50px; /* Maintain the space between cards */
+  gap: 50px;
   white-space: nowrap;
   padding-left: 10;
   padding-right: 20;
   margin-bottom: 20px;
   margin-top: 30px;
-  position: relative; /* Position for custom scrollbar placement */
+  position: relative; 
 }
 
 /* Small, custom scrollbar styling */
 .scrollable-row::-webkit-scrollbar {
-  height: 8px; /* Adjusted scrollbar height */
-  width: 8px; /* Adjusted scrollbar width */
+  height: 8px;
+  width: 8px; 
 }
 
 .scrollable-row::-webkit-scrollbar-track {
@@ -81,13 +80,46 @@ h1 {
   background: #555;
 }
 
-/* Add gap between the card and the scrollbar */
 .scrollable-row-container {
-  margin-right: 30px; /* 30px gap from the card */
-  width: 25%; /* Restrict the scrollbar to 25% of the screen width */
-  position: fixed; /* Fix the scrollbar to the right side */
-  right: 0; /* Align to the right of the screen */
-  top: 0; /* Align to the top for visibility */
-  bottom: 0; /* Stretch to the bottom */
-  overflow-y: auto; /* Allow vertical scrolling */
+  margin-right: 30px; 
+  width: 25%; 
+  position: fixed; 
+  right: 0; 
+  top: 0;
+  bottom: 0; 
+  overflow-y: auto; 
+}
+
+@media (max-width: 768px) {
+  .container-fluid {
+    padding: 15px; 
+  }
+}
+
+  .text-end {
+    text-align: center; 
+    margin-bottom: 10px;
+  }
+
+  .text-end button {
+    margin: 5px;
+    font-size: 14px;
+  }
+
+  .scrollable-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px; 
+
+  .col-md-3 {
+    flex: 0 0 100%; 
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 20px; 
+    text-align: center;
+    margin-bottom: 20px;
+  }
 }
