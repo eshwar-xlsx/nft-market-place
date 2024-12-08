@@ -1,6 +1,5 @@
 // Categories_Card.js
 import React from "react";
-import PropTypes from "prop-types";
 
 const Categories_Card = ({ game_image, game_title, game_price }) => {
   return (

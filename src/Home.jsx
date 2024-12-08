@@ -71,8 +71,9 @@ const Home = () => {
       <div className="container-fluid home-container bg-dark">
         <div className="row justify-content-center home-row">
           <div className="col-md-7 text-start bg-dark text-white p-5 rounded-lg shadow-lg col-sm-12">
-            <h2 className="mt-5 dynamic-heading text-center">
-              GET THE{" "}
+            <h2 className="mt-5 dynamic-heading text-center display-3 ">
+              GET THE <br></br> 
+              <span className="fw-bolder">{" "}</span>
               <span style={{ color: "#00D4FF", fontWeight: "bold" }}>
                 {text}
               </span>{" "}

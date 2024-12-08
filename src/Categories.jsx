@@ -38,7 +38,7 @@ const sports_data = [
     sports_price: "35",
   },
   {
-    sports_image: "/assets/sports_data_2.webp",
+    sports_image: "/assets/sports_data_messi.avif",
     sports_title: "The Collab",
     sports_price: "35",
   },

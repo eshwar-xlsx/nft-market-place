@@ -5,8 +5,12 @@
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
-  width: 100%;
-  max-width: 200px; 
+  width: 250px; /* Increased width */
+  height: 350px; /* Increased height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   margin-right: 15px;
 }
 
@@ -16,7 +20,7 @@
 }
 
 .card-img-top {
-  width: 100px;
+  width: 100%;
   height: 300px; 
   object-fit: cover;
   transition: transform 0.4s ease;
@@ -27,16 +31,22 @@
 }
 
 .card-body {
-  padding: 60px;
+  padding: 15px; /* Increased padding */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .card-title {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 5px;
 }
 
 .card-text {
-  font-size: 1.2rem; 
+  font-size: 1.2rem;
   color: #555;
+  text-align: center;
 }
 
 .container-fluid {
@@ -50,20 +60,20 @@ h1 {
 
 .scrollable-row {
   display: flex;
-  overflow-x: auto;
-  gap: 50px;
+  gap: 20px;
   white-space: nowrap;
-  padding-left: 10;
-  padding-right: 20;
-  margin-bottom: 20px;
-  margin-top: 30px;
-  position: relative; 
+  overflow-x: auto;
+  padding: 10px 20px;
+  scroll-behavior: smooth;
 }
 
-/* Small, custom scrollbar styling */
+.scrollable-row.horizontal-scroll {
+  flex-wrap: nowrap;
+}
+
 .scrollable-row::-webkit-scrollbar {
   height: 8px;
-  width: 8px; 
+  width: 8px;
 }
 
 .scrollable-row::-webkit-scrollbar-track {
@@ -80,24 +90,13 @@ h1 {
   background: #555;
 }
 
-.scrollable-row-container {
-  margin-right: 30px; 
-  width: 25%; 
-  position: fixed; 
-  right: 0; 
-  top: 0;
-  bottom: 0; 
-  overflow-y: auto; 
-}
-
 @media (max-width: 768px) {
   .container-fluid {
-    padding: 15px; 
+    padding: 15px;
   }
-}
 
   .text-end {
-    text-align: center; 
+    text-align: center;
     margin-bottom: 10px;
   }
 
@@ -110,16 +109,34 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px; 
+    gap: 15px;
+  }
 
   .col-md-3 {
-    flex: 0 0 100%; 
+    flex: 0 0 100%;
     max-width: 100%;
   }
 
   h1 {
-    font-size: 20px; 
+    font-size: 1.5rem;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+  }
+
+  .card {
+    width: 250px; /* Adjusted for mobile */
+    height: 400px; /* Adjusted for mobile */
+  }
+
+  .card-img-top {
+    height: 240px; /* Adjusted for mobile */
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
   }
 }

@@ -6,7 +6,6 @@ const ContactUs = () => {
   const [showForm, setShowForm] = useState(false);
 
   useEffect(() => {
-    // Set a timeout of 10 seconds to show the form
     const timer = setTimeout(() => {
       setShowForm(true);
     }, 10000); // 10 seconds
