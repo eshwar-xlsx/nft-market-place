@@ -40,7 +40,7 @@ const About_Us = () => {
             {/* Video Section */}
             <div className="col-md-4">
               <div
-                style={{ height: "300px", width: "100%", borderRadius: "15px" }}
+                style={{ height: "300px", width: "100%", borderRadius: "15px", marginLeft:"10px" }}
                 className="shadow-lg col-md-4 d-flex align-items-center justify-content-center"
               >
                 <video
