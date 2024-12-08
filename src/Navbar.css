@@ -1,12 +1,14 @@
 .navbar {
-  font-size: 20px; 
-  padding: 10px 20px; 
+  font-size: 50px;
+  padding: 10px 15px;
+  border: 1px solid red;
+
 }
 
 .navbar-brand .brand-logo {
-  height: 50px; 
-  width: auto;
-  object-fit: contain;
+  height: 100px; 
+  width: 100px;
+  object-fit:cover; 
 }
 
 .custom-toggler .navbar-toggler-icon {
@@ -17,10 +19,9 @@
   border-color: white; 
 }
 
-
 .navbar-nav .nav-item .nav-link {
   padding: 5px 10px; 
-  font-size: 19px; 
+  font-size: 19px;
 }
 
 .bottom-border {
@@ -45,20 +46,19 @@
 
 .user-section {
   display: flex;
-  gap: 15px;
+  gap: 35px;
 }
 
 .user-avatar {
-  height: 50px; 
-  width: 50px;
+  height: 90px; 
+  width: 90px;
   border-radius: 50%;
 }
 
 .user-name {
-  font-size: 18px; 
+  font-size: 38px;
 }
 
-/* Responsive Styles */
 @media (max-width: 768px) {
   .navbar-nav {
     flex-direction: column;
@@ -70,8 +70,8 @@
   }
 
   .user-avatar {
-    height: 90px; 
-    width: 90px;
+    height: 70px; 
+    width: 70px;
   }
 
   .user-name {

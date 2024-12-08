@@ -71,15 +71,15 @@ const Home = () => {
       <div className="container-fluid home-container bg-dark">
         <div className="row justify-content-center home-row">
           <div className="col-md-7 text-start bg-dark text-white p-5 rounded-lg shadow-lg col-sm-12">
-            <h2 className="mt-5 dynamic-heading text-center display-3 ">
+            <h2 className="mt-5 dynamic-heading text-center display-2 ">
               GET THE <br></br> 
-              <span className="fw-bolder">{" "}</span>
+              <span className="fw-bolder" style={{fontFamily:"fantasy"}}>{" "}</span>
               <span style={{ color: "#00D4FF", fontWeight: "bold" }}>
                 {text}
               </span>{" "}
               you want!
             </h2>
-            <p className="" style={{ marginTop: "200px" }}>
+            <p className="" style={{ marginTop: "80px" , fontSize:"22px",fontFamily:"inherit  " }}>
               Explore our vast collection of NFTs, ranging from crypto assets to
               rare collectibles. Join the bidding, claim your favorite NFTs, and
               become part of the digital revolution!

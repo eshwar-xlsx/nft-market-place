@@ -93,12 +93,13 @@ const Navbar = () => {
                 src="./assets/nav-icon.png"
                 alt="User Avatar"
                 className="user-avatar"
+                style={{marginLeft:"20px"}}
               />
               <div>
-                <h6 className="mb-0 text-white user-name">Aisha</h6>
+                <h6 className="mb-0 text-white user-name" style={{marginRight:"05px"}}>Aisha</h6>
                 <h6
                   className="mb-0"
-                  style={{ color: "lightblue", fontSize: "16px" }}
+                  style={{ color: "lightblue", fontSize: "16px"}}
                 >
                   13 ETC
                 </h6>
