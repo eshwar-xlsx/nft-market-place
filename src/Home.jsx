@@ -69,7 +69,7 @@ const Home = () => {
   return (
     <>
       <div className="container-fluid home-container bg-dark">
-        <div className="row justify-content-center home-row">
+        <div className="row justify-content-center home-row h-25">
           <div className="col-md-7 text-start bg-dark text-white p-5 rounded-lg shadow-lg col-sm-12">
             <h2 className="mt-5 dynamic-heading text-center display-2 ">
               GET THE <br></br> 
@@ -101,7 +101,7 @@ const Home = () => {
             
           </div>
 
-          <div className="video-container shadow-lg col-md-5 col-12 d-flex align-items-center justify-content-center">
+          <div className="h-25 video-container shadow-lg col-md-5 col-12 d-flex align-items-center justify-content-center">
             <video muted autoPlay loop className="home-video">
               <source src="assets/Recording-2.mp4" type="video/mp4" />
             </video>

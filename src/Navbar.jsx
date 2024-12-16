@@ -16,7 +16,7 @@ const Navbar = () => {
           position: "sticky",
           top: "0",
           zIndex: "100",
-          border:"1px solid red"
+          // border:"1px solid red"
         }}
       >
         <div className="container-fluid">
