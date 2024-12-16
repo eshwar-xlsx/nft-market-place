@@ -6,21 +6,21 @@ const data = [
   {
     img_url: "assets/movies_data_black_cat.gif",
     text: "The Shocking Black-Cat",
-    price: "24",
+    price: "44",
   },
   {
-    img_url: "assets/movies_data_black_cat.gif",
-      text: "Lorem ipsum dolor sit amet",
+    img_url: "assets/blogs-1.webp",
+      text: "Pro Rider...",
       price: "24",
     },
     {
-      img_url: "assets/movies_data_black_cat.gif",
-      text: "Lorem ipsum dolor sit amet",
-      price: "24",
+      img_url: "assets/game_data_1.avif",
+      text: "The Weapon Master!",
+      price: "104",
   },
   {
     img_url: "assets/loved.jpg",
-    text: "Lorem ipsum dolor sit amet",
+    text: "Loved Ninja",
     price: "24",
   },
 ];

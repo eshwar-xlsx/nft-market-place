@@ -8,6 +8,7 @@ const Categories_Card = ({ game_image, game_title, game_price }) => {
       <div className="card-body">
         <h5 className="card-title">{game_title}</h5>
         <p className="card-text">Price: {game_price}</p>
+        <button className="btn btn-sm btn-outline-success ">Buy Now</button>
       </div>
     </div>
   );
