@@ -1,17 +1,22 @@
 import React from "react";
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink, Outlet, useNavigate } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
+  let nav = useNavigate()
+  const loginHandler=()=>{
+    nav('login-form')
+  }
   return (
     <>
       <nav
         className="navbar navbar-expand-lg bg-dark text-white "
         style={{
-          fontSize: "20px",
+          fontSize: "10px",
           position: "sticky",
           top: "0",
           zIndex: "100",
+          border:"1px solid red"
         }}
       >
         <div className="container-fluid">
@@ -85,6 +90,15 @@ const Navbar = () => {
                   About Us
                 </NavLink>
               </li>
+
+              <li className="nav-item">
+                <NavLink
+                  className="nav-link bottom-border text-white"
+                  to="/contact"
+                >
+                  Contact Us
+                </NavLink>
+              </li>
             </ul>
 
             {/* Right Section */}
@@ -103,6 +117,7 @@ const Navbar = () => {
                 >
                   13 ETC
                 </h6>
+                <button onClick={loginHandler} className="text-white-50 bg-dark mt-3 h6">Not a Aisha?</button>
               </div>
             </div>
           </div>

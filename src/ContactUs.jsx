@@ -8,7 +8,7 @@ const ContactUs = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowForm(true);
-    }, 10000); // 10 seconds
+    }, 1000 ); // 10 seconds
 
     // Cleanup the timer in case the component is unmounted before the timeout
     return () => clearTimeout(timer);

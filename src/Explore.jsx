@@ -10,16 +10,16 @@ const data = [
   },
   {
     img_url: "assets/movies_data_black_cat.gif",
-    text: "Lorem ipsum dolor sit amet",
-    price: "24",
+      text: "Lorem ipsum dolor sit amet",
+      price: "24",
+    },
+    {
+      img_url: "assets/movies_data_black_cat.gif",
+      text: "Lorem ipsum dolor sit amet",
+      price: "24",
   },
   {
-    img_url: "assets/movies_data_black_cat.gif",
-    text: "Lorem ipsum dolor sit amet",
-    price: "24",
-  },
-  {
-    img_url: "assets/movies_data_black_cat.gif",
+    img_url: "assets/loved.jpg",
     text: "Lorem ipsum dolor sit amet",
     price: "24",
   },

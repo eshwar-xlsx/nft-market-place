@@ -8,6 +8,8 @@ import Explore from "./Explore";
 import Blogs from "./Blogs";
 // import Footer from "./Footer";
 import Footer2 from "./Footer2";
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+
 
 import 'aos/dist/aos.css';
 
@@ -16,6 +18,8 @@ import Navbar2 from "./Navbar2";
 import About_Us from "./About_Us";
 import ContactUs from "./ContactUs";
 import WildCard from "./WildCard";
+import BiddingPage from "./BiddingPage";
+import Login_Form from "./Login_Form";
 
 
 const AppLayout = () => {
@@ -39,7 +43,11 @@ const App = () => {
           <Route path="explore" element={<Explore />} />
           <Route path="blogs" element={<Blogs />} />
           <Route path='about' element={<About_Us/>} />
-          <Route path='' element={<ContactUs/>} />
+          <Route path='contact' element={<ContactUs/>} />
+
+          <Route path="/bidding-page" element={<BiddingPage />} />
+          <Route path="/login-form" element={<Login_Form/>} />
+
         </Route>
         <Route path="*" element={<WildCard/>} />
 
