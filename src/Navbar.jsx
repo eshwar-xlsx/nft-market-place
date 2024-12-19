@@ -15,19 +15,15 @@ const Navbar = () => {
           fontSize: "10px",
           position: "sticky",
           top: "0",
-          zIndex: "100",
-          // border:"1px solid red"
+          zIndex: "1",
+          border:"0px solid red",
+          display:"flex",
+          justifyContent:"center"
         }}
       >
-        <div className="container-fluid">
+        <div className="">
           {/* Branding */}
-          <NavLink className="navbar-brand text-white fw-bold" to="/">
-            <img
-              src="./assets/logo.png"
-              alt="NFT Marketplace"
-              className="brand-logo"
-            />
-          </NavLink>
+         
 
           {/* Hamburger Menu */}
           <button

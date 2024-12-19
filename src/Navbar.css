@@ -11,17 +11,11 @@
     padding: 0 20px;
     font-family: 'Poppins', sans-serif;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
-    height: 80px;  /* Reduced height */
+    border-bottom: 20px solid rgba(255, 255, 255, 0.3);
+    height: 100px;  /* Reduced height */
+    border: 1px solid red;
 }
 
-.navbar-brand .brand-logo {
-    height: 50px;
-    width: auto;
-    object-fit: cover;
-    border-radius: 10px;
-    border: 2px solid #fff;
-}
 
 .custom-toggler .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
